@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+#container{
+    height: 100vh;
+    width: 100%;
+    background: #eaf5ff;
+    position: relative;
+}
+#navbar{
+    height: 15%;
+    width: 90%;
+    clip-path: polygon(100% 0,95% 50%,50% 100%,5% 5%,0 0);
+    position: absolute;
+    top: 0;
+    left: 5%;
+    background: rgb(214, 44, 44);
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul, ol{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 25px 0px;
+}
+ul{
+    position: absolute;
+    left: 5%;
+}
+ol{
+    position: absolute;
+    right: 5%;
+}
+li{
+    margin: 0px 60px;
+}
+li a{
+    text-decoration: none;
+    color: rgb(7, 11, 14);
+    transition: 0.5s;
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -5px;
+    left: calc(45% - 60px);
+}
+#logo img{
+    height: 120px;
+}
+#sideimg{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 25%;
+    right: 32%;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+#sideimg img{
+    height: 600px;
+}
+#content{
+    height: 400px;
+    width: 750px;
+    position: absolute;
+    left: 5%;
+    top: calc(50% - 200px);
+}
+
+#content h2{
+    font-size: 150px;
+    color: red;
+    font-weight: 900;
+}
+#content button{
+    height: 70px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background: rebeccapurple;
+    font-weight: 900;
+    margin-top: 30px;
+    color: aqua;
+}
+/* End of Header */
+article h1::after{
+    content: '';
+    background: blue;
+    display: block;
+    height: 3px;
+    width: 250px;
+    margin: 20px auto 5px;
+}
+.article a{
+    list-style: none;
+    color: blanchedalmond;
+    outline: none;
+    text-decoration: none;
+}
+.article a:hover{
+    color: yellowgreen;
+    transition: 0.3s;
+}
+.article p{
+    font-size: 21px;
+    padding: 10px;
+}
+.article span{
+    color: yellowgreen;
+}
+.article .card{
+    padding: 5px;
+}
+#cost{
+    margin-left: 250px;
+    margin-top: -55px;
+    font-size: 20px;
+    color: orange;
+}
+#name{
+    padding: 10px;
+}
+small{
+    padding: 10px;
+}
+small a{
+    height: 70px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background: #eee;
+    font-weight: 900;
+    margin-top: 30px;
+    text-decoration: none !important;
+    padding: 5px;
+}
