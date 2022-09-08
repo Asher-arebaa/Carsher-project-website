@@ -256,7 +256,7 @@ li a{
  footer a{
     text-decoration: none;
     transition: .5s;
-    color: #eee;
+    color: rgb(13, 13, 14);
 }
 footer ul li{
     list-style-type: none;
