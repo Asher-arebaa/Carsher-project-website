@@ -1,17 +1,12 @@
-import axios from "axios";
-
 const options = {
-  method: 'GET',
-  url: 'https://car-data.p.rapidapi.com/cars',
-  params: {limit: '10', page: '0'},
-  headers: {
-    'X-RapidAPI-Key': '6db33aa869mshf63bb4e570fc701p19cf0fjsn2a87e2250b51',
-    'X-RapidAPI-Host': 'car-data.p.rapidapi.com'
-  }
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'fc86b1abdamsh2197891c167970ep1c888cjsne102ee33521f',
+		'X-RapidAPI-Host': 'car-data.p.rapidapi.com'
+	}
 };
 
-axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
+fetch('https://car-data.p.rapidapi.com/cars?limit=10&page=0', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
